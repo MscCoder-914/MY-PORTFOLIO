@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MD PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            margin: 0%;
+            padding: 0%;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .navbar-brand {
+            font-size: 20PX;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: whitesmoke;
+        }
+
+        .img-fluid {
+            border: 1px solid black;
+        }
+
+        .hero {
+            height: 110vh;
+            background: url('https://c4.wallpaperflare.com/wallpaper/229/271/635/suits-black-background-hitman-video-games-wallpaper-thumb.jpg') no-repeat center center/cover;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .card {
+            border-radius: 3px;
+            background-color: white;
+        }
+
+        .progress {
+            height: 8px;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+
+        .progress-bar {
+            border-radius: 5px;
+        }
+
+        .service-icon {
+            font-size: 30px;
+            color: skyblue;
+            background: white;
+            border: 5px solid skyblue;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card:hover .service-icon,
+        .service-icon:hover {
+            background: blue;
+            color: white;
+        }
+
+        .milestones-section {
+            background-color: #257cce;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .milestones-icon {
+            font-size: 60px;
+            color: white;
+            background: transparent;
+            border: 4px solid whitesmoke;
+            border-radius: 70%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 2%;
+        }
+
+        .Achieve-card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .Achieve-card:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-bg {
+            background: url('https://getstackhost.com/wp-content/uploads/2022/07/Stories-B1.png') no-repeat left center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 30px;
+        }
+
+        .contact-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+            margin: 5px;
+            transition: 0.3s;
+            border: 2px solid skyblue;
+        }
+
+        .contact-icons a:hover {
+            background: skyblue;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbg-black fixed-top">
+        <div class="container mt-1 mb-0">
+            <a class="navbar-brand fw-bold" href="https://www.w3schools.com/howto/howto_website_create_portfolio.asp"
+                target="_blank">MD PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#services">SERVICES</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#milestones">MILESTONES</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#achievements">ACHIEVEMENTS</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container mt-2">
+            <h1 class="display-2 fw-bolder mb-3">I am Mohamed Yusuff</h1>
+            <p class="fs-2 mt-0">Web Developer & Web Designer</p>
+        </div>
+    </header>
+
+    <section id="about" class="bg-light">
+        <div class="container mt-5 py-4 px-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow-lg mt-5 mb-5 p-4 mb-4 rounded-0">
+                        <div class="row mt-5 mb-5 px-4">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <img src="https://static.vecteezy.com/system/resources/previews/051/900/022/non_2x/passport-size-photo-suit-for-male-free-png.png"
+                                            class="img-fluid rounded-1 mx-auto mb-1" width="145px">
+                                    </div>
+                                    <div class="col-sm-6 col-md-7 px-0">
+                                        <div>
+                                            <p><b>Name:</b> Mohamed Yusuff K</p>
+                                            <p><b>Profile:</b> Front-End Developer</p>
+                                            <p><b>Email:</b> email2yusuff@gmail.com</p>
+                                            <p><b>Phone:</b> +91 96775 83930</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h6 class="mt-4 fw-bold mx-auto mb-3">Skill</h6>
+                                    <p class="mb-1">HTML<span class="float-end">85%</span></p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-primary" style="width:85%"></div>
+                                    </div>
+                                    <p class="mb-1">CSS<span class="float-end">75%</span></p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-primary" style="width:75%"></div>
+                                    </div>
+                                    <p class="mb-1">BOOTSTRAP<span class="float-end">70%</span></p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-primary" style="width:70%"></div>
+                                    </div>
+                                    <p class="mb-1">ASP.NET<span class="float-end">85%</span></p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-primary" style="width:85%"></div>
+                                    </div>
+                                    <p class="mb-1">JAVASCRIPT<span class="float-end">40%</span></p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-primary" style="width:40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h3 class="fw-bold mx-auto">About me</h3>
+                                <hr class="border-primary w-25 border-3 mb-4">
+                                <ul>
+                                    <li class="mb-3"><b>Hello Everyone</b>!!My Name Is <b>Mohamed Yusuff</b>.I Am From <b>Trichy</b>.</li>
+                                    <li class="mb-3"><b>Currently</b>, I Am Pursuing Final Year <b>Msc Cs</b> At Sjc,trichy.</li>
+                                    <li class="mb-2"><b>Education Qualification</b> :
+                                    <ul>
+                                    <li class="mb-1 mt-1">I Completed My <b>Bsc Cs</b> At Jmc,trichy.</li>
+                                    <li class="mb-3">I Completed My <b>SSLC</b> and <b>HSC</b> In Alpha Plus Matriculation Hr Sec School,trichy.</li>
+                                    </ul>
+                                    </li>
+                                    <li class="mb-3">My Strengths Include Working Effectively In A Team And Being A Helpful, Supportive Person.</li>
+                                    <li class="mb-4">My Short Term Goal Is Said To Be Place In A Company To Show My Ability And Knowledge.In Future I Want To Be In A Senior Position.</li>
+                                </ul>
+                                <a href="https://freerangestock.com/sample/75656/hire-me-pressed-means-job-candidate-or-contractor.jpg"
+                                    target="_blank" class="btn btn-info text-white px-3 py-1 mx-3 rounded-1 mb-1">HIRE
+                                    ME!</a> <a href="https://create.microsoft.com/en-us/templates/resumes"
+                                    target="_blank" class="btn btn-info text-white px-3 py-1 mx-3 rounded-1 mt-0">Download
+                                    CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section id="services" class="text-center mb-5 py-5 bg-light">
+        <h2 class="fw-bold mt-4 fs-1">SERVICES</h2>
+        <p class="text-muted">Our customers shape our journey, and we grow by serving them better every day.</p>
+        <hr class="mx-auto mb-5 border-primary" style="width: 75px; border: 3px solid">
+        <div class="row mb-5 g-4 container mx-auto">
+            <div class="col-md-4">
+                <div class="card text-center shadow p-4 w-100 h-100 rounded-3">
+                    <div class="service-icon"><i class="fa-solid fa-laptop"></i></div>
+                    <h5 class="fw-bold mt-2">WEB DESIGN</h5>
+                    <p class="text-muted text-justify">We offer custom web development services tailored to your
+                        business.dynamic websites to e-commerce platforms, our team ensures seamless functionality and
+                        user-friendly experiences with modern technologies like HTML, CSS, Bootstrap etc...</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow p-4 w-100 h-100 rounded-3">
+                    <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <h5 class="fw-bold mt-2">WEB DEVELOPMENT</h5>
+                    <p class="text-muted text-justify">Our web design services focus on creating visually appealing and
+                        responsive websites. We combine creativity with usability to ensure your site looks great and
+                        works smoothly across all devices, enhancing your brands digital presence.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow p-4 w-100 h-100 rounded-3">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h5 class="fw-bold mt-2">EDITING</h5>
+                    <p class="text-muted text-justify">We provide professional editing services for all types of
+                        content, whether its text, images, or videos. Our team ensures clarity, precision, and style
+                        while preserving your unique voice and message. Perfect for bloggers and businesses.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5 g-4 container mx-auto">
+            <div class="col-md-4">
+                <div class="card text-center shadow p-4 w-100 h-100 rounded-3">
+                    <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h5 class="fw-bold mt-2">PHOTOGRAPHY</h5>
+                    <p class="text-muted text-justify">Our photography services capture the essence of every moment.
+                        From product shoots to portraits, we offer high-quality images that tell your story and elevate
+                        your brand. Let us bring your vision to life with stunning visuals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow p-4 w-100 h-100 rounded-3">
+                    <div class="service-icon"><i class="fa-solid fa-table"></i></div>
+                    <h5 class="fw-bold mt-2">EXCEL</h5>
+                    <p class="text-muted text-justify">Maximize the power of Excel with our expert services. Whether its
+                        advanced formulas, data analysis, or creating automated spreadsheets, we help you work smarter
+                        and more efficiently, streamlining your data management process.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow p-4 w-100 h-100 rounded-3">
+                    <div class="service-icon"><i class="fa-solid fa-file"></i></div>
+                    <h5 class="fw-bold mt-2">WORD & POWERPOINT</h5>
+                    <p class="text-muted text-justify">Elevate your documents and presentations with our Word and
+                        PowerPoint services. We offer everything from formatting and layout design to creating impactful
+                        presentations that captivate your audience and deliver your message effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="milestones" class="milestones-section">
+        <div class="container-fluid mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="milestones-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h2 class="mb-0 fw-bolder">2</h2>
+                    <p class="mt-0 fw-bolder">PROJECTS</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="milestones-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h2 class="mb-0 fw-bolder">5</h2>
+                    <p class="mt-0 fw-bolder">CERTIFICATES</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="milestones-icon"><i class="fa-solid fa-award"></i></div>
+                    <h2 class="mb-0 fw-bolder">3</h2>
+                    <p class="mt-0 fw-bolder">AWARDS WON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="align-items-center bg-light mb-0" style="padding-top: 3%;">
+        <h2 class="text-center fw-bolder mt-4 fs-1">ACHIEVEMENTS</h2>
+        <p class="text-muted text-center">Small achievements lead to big successes.</p>
+        <hr class="mx-auto mb-5 border-primary" style="width: 75px; border: 3px solid">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="Achieve-card card shadow d-flex flex-column h-100">
+                        <img width="200px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCu7wzXR-rLj86rDwqdWKgCw4-uywnr4-84A&s"
+                            class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h6>I Won First Prize in Relay Race.</h6>
+                            <p><a href="https://en.wikipedia.org/wiki/Relay_race" target="_blank"
+                                    class="fw-bolder">Sports</a> / AUG 2017 <a
+                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCu7wzXR-rLj86rDwqdWKgCw4-uywnr4-84A&s"
+                                    target="_blank"><i
+                                        class="fa-solid fa-plus border rounded-circle p-2 float-end border-primary"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Achieve-card card shadow d-flex flex-column h-100">
+                        <img width="200px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQcOc0hEq8tfBREJK14B0k-1_LQeKmAPgbQ&s"
+                            class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h6>Certificates in R-programming.</h6>
+                            <p><a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank"
+                                    class="fw-bolder">Certifications</a> / JUNE 2021 <a
+                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQcOc0hEq8tfBREJK14B0k-1_LQeKmAPgbQ&s"
+                                    target="_blank"><i
+                                        class="fa-solid fa-plus border rounded-circle p-2 float-end border-primary"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Achieve-card card shadow d-flex flex-column h-100">
+                        <img width="200px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBShGN7kiAyMmNg7L0Yh5fwNYcfX0VlXpp9Q&s"
+                            class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h6>particpated on the workshop in the title of full stack development.</h6>
+                            <P><a href="https://en.wikipedia.org/wiki/Web_development" target="_blank"
+                                    class="fw-bolder">Workshop</a> / MAR 2023 <a
+                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBShGN7kiAyMmNg7L0Yh5fwNYcfX0VlXpp9Q&s"
+                                    target="_blank"> <i
+                                        class="fa-solid fa-plus border rounded-circle p-2 float-end border-primary"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-4 mt-5">
+                <div class="col-md-4">
+                    <div class="Achieve-card card shadow d-flex flex-column h-100">
+                        <img width="200px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFqnIQeGQ8rusiWcng4SfSgfe43MeESFX8w&s"
+                            class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h6>I Won First Prize in 100Metre Race.</h6>
+                            <P><a href="https://en.wikipedia.org/wiki/100_metres" target="_blank"
+                                    class="fw-bolder">Sports</a> / AUG 2018 <a
+                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFqnIQeGQ8rusiWcng4SfSgfe43MeESFX8w&s"
+                                    target="_blank"><i
+                                        class="fa-solid fa-plus border rounded-circle p-2 float-end border-primary"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Achieve-card card shadow d-flex flex-column h-100">
+                        <img width="200px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qPSx2Y0reRgecp4PxFBhTXKBYroX6QnbrQ&s"
+                            class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h6>Certificates in DreamWeaver.</h6>
+                            <P><a href="https://en.wikipedia.org/wiki/Adobe_Dreamweaver" target="_blank"
+                                    class="fw-bolder">Certifications</a> / DEC 2022 <a
+                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qPSx2Y0reRgecp4PxFBhTXKBYroX6QnbrQ&s"
+                                    target="_blank"> <i
+                                        class="fa-solid fa-plus border rounded-circle p-2 float-end border-primary"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Achieve-card card shadow d-flex flex-column h-100">
+                        <img width="200px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLa-0ICtDtWaZ2k2jELY6MuPmssKJHad3aA&s"
+                            class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h6>particpated on the workshop in the title of web analytics with G4.</h6>
+                            <p><a href="https://en.wikipedia.org/wiki/Google_Analytics" target="_blank"
+                                    class="fw-bolder">Workshop</a> / JAN 2024 <a
+                                    href="https://etimg.etb2bimg.com/thumb/msid-118530935,imgsize-47730,width-1200,height=765,overlay-etmanufacturing/news/industry/zf-group-launches-zf-pro-tech-plus-workshop-in-delhi.jpg"
+                                    target="_blank"><i
+                                        class="fa-solid fa-plus border rounded-circle p-2 float-end border-primary"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="testimonialCarousel" class="carousel slide text-center mt-5 mb-0 py-5"
+            data-bs-ride="carousel" style="background:#257cce">
+            <h2 class="fw-bold text-white fs-1">PROJECTS</h2>
+            <hr class="mx-auto mb-5 border-white" style="width: 75px; border: 3px solid">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-white">
+                    <p><img width="130px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPpMbSkYNopHEALs230tjJZS3wPvRj4b7dAw&s"
+                            class="rounded-circle mt-4 mb-0"></p>
+                    <h5 class="text-uppercase text-white">Construction and Building Hardware Website</h5>
+                    <p>Build Their Applications Using Asp.Net and MySql.</p>
+                </div>
+                <div class="carousel-item text-white">
+                    <p><img width="130px"
+                            src="https://camudigitalcampus.com/wp-content/uploads/2021/11/camu-blog-Exam-and-result-management.png"
+                            class="rounded-circle mt-4 mb-0"></p>
+                    <h5 class="text-uppercase">Student Result Management System</h5>
+                    <p>Build Their Applications Using Asp.Net and MySql.</p>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-bg">
+            <div class="container mt-5 py-5">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="rounded-0 contact-card row shadow-lg mx-md-5 mx-2">
+                        <div class="col-md-6 p-4">
+                            <h4 class="mb-3 fw-bold">Send Message Us</h4>
+                            <hr class="border-primary w-25 border-3 mb-4">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn btn-primary rounded-5">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6 p-4">
+                            <h4 class="mb-3 fw-bold">Get in Touch</h4>
+                            <hr class="border-primary w-25 border-3 mb-4">
+                            <p>Need a Front-End Developer to build a clean, responsive, and user-friendly website? I can
+                                help! Let's connect and bring your ideas to life.</p>
+                            <p><i class="fa-solid fa-location-dot text-primary mx-1"></i> No-8/9, Palakarai, Trichy.</p>
+                            <p><i class="fa-solid fa-phone text-primary mx-1"></i> +91 96775 83930</p>
+                            <p><i class="fa-solid fa-envelope text-primary mx-1"></i> email2yusuff@gmail.com</p>
+                            <div class="contact-icons mt-3">
+                                <a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook text-black"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram text-black"></i></a>
+                                <a href="https://twitter.com/" target="_blank"><i
+                                        class="fa-brands fa-twitter text-black"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank"><i
+                                        class="fa-brands fa-linkedin text-black"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="footer text-center text-dark">
+        <p class="mb-0 pt-4"> <i class="fa-regular fa-copyright"></i> Copyright <strong>MD
+                PORTFOLIO.</strong> All Rights Reserved</p>
+        <p>Designed by Md Yusuff _ Front-End Developer</p>
+    </div>
+    
+    <a href="#top" class="position-fixed bottom-0 end-0 m-3 btn btn-primary rounded-circle"> <i
+    class="fa-solid fa-arrow-up"></i> </a>
+
+</body>
+</html>
